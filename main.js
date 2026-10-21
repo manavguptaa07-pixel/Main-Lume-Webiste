@@ -97,7 +97,6 @@ function mountLayout(){
   const cur = currentPage();
   const links = PAGES.map(([h,t]) => `<a href="${h}" class="${cur===h?"on":""}">${t}</a>`).join("");
   document.body.insertAdjacentHTML("afterbegin", `
-    <div id="loader"><img class="lg" src="logo.png" alt="The Lume Theory"><div class="bar"><i></i></div></div>
     <div id="progress"></div><div id="glow"></div><canvas id="particles"></canvas>
     <div class="announce">Skin · Aesthetics · Wellness — Order directly on WhatsApp</div>
     <header class="nav" id="nav"><div class="wrap in">
@@ -411,6 +410,4 @@ document.addEventListener("DOMContentLoaded",()=>{
     if(invalidName||invalidPhone||!d.message){ toast("Check your name, phone number and message"); return; }
     const t=[`*Enquiry — ${CONFIG.brand}*`,"",`Name: ${d.name}`,d.phone?`Phone: +91 ${d.phone}`:null,`Skin concern: ${d.concern}`,"",d.message].filter(l=>l!==null).join("\n");
     window.open(waLink(t),"_blank"); toast("Opening WhatsApp…"); });
-  window.addEventListener("load",()=>setTimeout(()=>document.getElementById("loader").classList.add("done"),150));
-  setTimeout(()=>document.getElementById("loader")?.classList.add("done"),1800);
 });
