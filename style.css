@@ -39,15 +39,6 @@ h3{font-size:1.55rem}
 .btn-wa:hover{transform:translateY(-3px);box-shadow:0 18px 50px -10px rgba(37,211,102,.8)}
 .btn svg{width:18px;height:18px;fill:currentColor}
 
-/* preloader */
-#loader{position:fixed;inset:0;z-index:9999;background:#070504;display:grid;place-items:center;transition:opacity .8s .1s,visibility .8s .1s}
-#loader.done{opacity:0;visibility:hidden}
-#loader .lg{width:130px;animation:pulse 1.8s ease-in-out infinite;filter:drop-shadow(0 0 30px rgba(201,161,91,.5))}
-#loader .bar{position:absolute;bottom:38%;width:160px;height:1px;background:rgba(201,161,91,.2);overflow:hidden}
-#loader .bar i{display:block;height:100%;width:40%;background:var(--gold);animation:load 1.3s var(--ease) infinite}
-@keyframes pulse{50%{transform:scale(1.07);opacity:.85}}
-@keyframes load{from{transform:translateX(-100%)}to{transform:translateX(260%)}}
-
 /* cursor glow + scroll progress */
 #glow{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;z-index:1;background:radial-gradient(circle,rgba(201,161,91,.10),transparent 65%);transform:translate(-50%,-50%);left:-999px;top:-999px;transition:opacity .4s}
 #progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold2));z-index:1200}
@@ -368,4 +359,4 @@ footer.ft{margin-top:clamp(60px,8vw,110px);border-top:1px solid var(--line);back
   .fg{gap:26px}
   .fb{margin-top:30px}
 }
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}#loader{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
