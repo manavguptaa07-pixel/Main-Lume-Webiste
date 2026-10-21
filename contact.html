@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — The Lume Theory</title>
+<meta name="description" content="Contact The Lume Theory on WhatsApp or Instagram.">
+<meta name="theme-color" content="#0a0807">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <section class="phero"><div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> / Contact</div>
+    <h1 class="contact-title">Let's <span class="gold-text">talk</span> skin</h1>
+    <p class="lead" style="margin-inline:auto">Questions about a product, your routine or an order? Message us — we reply personally.</p>
+  </div></section>
+
+  <section class="sec" style="padding-top:20px"><div class="wrap contact">
+    <div class="info rv l">
+      <span class="eyebrow">Reach Us</span>
+      <h2 style="margin:16px 0 20px">We're one <span class="gold-text">message</span> away</h2>
+      <div class="it"><div><b>WhatsApp</b><a class="contact-number" href="tel:+916239318113">+91 6239318113</a><br><a id="waLink" class="eyebrow no-mark" style="margin-top:8px" target="_blank" rel="noopener" href="#">Chat on WhatsApp</a></div></div>
+      <div class="it"><div><b>Instagram</b><span>@thelumetheory</span><br><a id="igLink" class="eyebrow no-mark" style="margin-top:8px" target="_blank" rel="noopener" href="#">Follow Us</a></div></div>
+      <div class="it"><div class="ic">❋</div><div><b>Skin Guidance</b><span>Tell us your concern and we'll suggest what suits you.</span></div></div>
+    </div>
+    <form class="form rv r" id="contactForm" novalidate>
+      <h3 style="font-size:2rem;margin-bottom:22px">Send an enquiry</h3>
+      <div class="two"><div class="fld"><label>Your Name</label><input name="name" placeholder="Your name" autocomplete="name"><div class="err">Use letters only for your name</div></div><div class="fld"><label>Phone (optional)</label><div class="phone-field"><span>+91</span><input name="phone" placeholder="10-digit mobile" inputmode="numeric" autocomplete="tel-national" pattern="[0-9]{10}"></div><div class="err">Enter a valid 10-digit number</div></div></div>
+      <div class="fld"><label>Skin Concern</label><select name="concern"><option>General enquiry</option><option>Dullness / Glow</option><option>Dark spots / Pigmentation</option><option>Fine lines / Anti-aging</option><option>Dryness / Hydration</option><option>Sun protection</option></select></div>
+      <div class="fld"><label>Message</label><textarea name="message" rows="4" placeholder="How can we help?"></textarea></div>
+      <button class="btn btn-wa" style="width:100%" type="submit">Send via WhatsApp</button>
+      <p class="note">Your message opens in WhatsApp — nothing is stored on this website.</p>
+    </form>
+  </div></section>
+</main>
+<script src="main.js"></script>
+<script>document.getElementById("waLink").href=waLink("Hi The Lume Theory!");document.getElementById("igLink").href=CONFIG.instagram;</script>
+</body>
+</html>
